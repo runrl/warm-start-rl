@@ -1,0 +1,8 @@
+template: pretraining_experiment_template.yaml
+model_size: model_sizes/model_size_1x.yaml
+output_root: outputs/pretraining_quick/1x
+metrics_output_dir: reports/local_metrics/1x
+experiments:
+  run_name_suffix: "_1x"
+pretrained:
+  directory: checkpoints/pretraining_run_1x

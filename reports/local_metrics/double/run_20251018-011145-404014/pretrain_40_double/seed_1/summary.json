@@ -1,0 +1,19 @@
+{
+  "run_name": "pretrain_40_double-seed1",
+  "pretrain_steps": 40,
+  "seed": 1,
+  "model_hidden_dim": 192,
+  "model_heads": 6,
+  "model_depth": 2,
+  "threshold_hits": {
+    "0.8": 400,
+    "0.9": 400,
+    "0.97": 700,
+    "0.99": 700
+  },
+  "pretrain_policy_loss": 0.2632789423116321,
+  "pretrain_value_loss": 0.07373359678783266,
+  "pretrain_accuracy": 0.8935872221228917,
+  "run_id": "run_20251018-011145-404014",
+  "metrics_root": "/home/shadeform/c4-scaling/reports/local_metrics/double/run_20251018-011145-404014"
+}

@@ -1,0 +1,8 @@
+template: pretraining_experiment_template.yaml
+model_size: model_sizes/model_size_double.yaml
+output_root: outputs/pretraining_quick/double
+metrics_output_dir: reports/local_metrics/double
+experiments:
+  run_name_suffix: "_double"
+pretrained:
+  directory: checkpoints/pretraining_run_double

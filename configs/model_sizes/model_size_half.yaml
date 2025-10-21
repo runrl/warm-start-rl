@@ -1,0 +1,8 @@
+description: Half-size transformer (hidden=96, heads=3, depth=2)
+ppo:
+  model_hidden_dim: 96
+  model_heads: 3
+  model_depth: 2
+wandb:
+  tags:
+    - size=0.5x

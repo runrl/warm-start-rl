@@ -1,0 +1,33 @@
+__pycache__/
+.python-version
+.venv/
+outputs/
+data/
+wandb/
+*.pyc
+*.egg-info/
+checkpoints/*
+# Operating system cruft
+.DS_Store
+
+# Serialized/binary artifacts
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.npz
+*.onnx
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb

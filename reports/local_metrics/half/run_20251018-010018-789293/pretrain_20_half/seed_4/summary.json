@@ -1,0 +1,19 @@
+{
+  "run_name": "pretrain_20_half-seed4",
+  "pretrain_steps": 20,
+  "seed": 4,
+  "model_hidden_dim": 96,
+  "model_heads": 3,
+  "model_depth": 2,
+  "threshold_hits": {
+    "0.8": 600,
+    "0.9": 1000,
+    "0.97": 1600,
+    "0.99": 2700
+  },
+  "pretrain_policy_loss": 0.6257025640082875,
+  "pretrain_value_loss": 0.06371598471347066,
+  "pretrain_accuracy": 0.779113773168842,
+  "run_id": "run_20251018-010018-789293",
+  "metrics_root": "/home/shadeform/c4-scaling/reports/local_metrics/half/run_20251018-010018-789293"
+}

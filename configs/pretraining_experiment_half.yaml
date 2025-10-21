@@ -1,0 +1,8 @@
+template: pretraining_experiment_template.yaml
+model_size: model_sizes/model_size_half.yaml
+output_root: outputs/pretraining_quick/half
+metrics_output_dir: reports/local_metrics/half
+experiments:
+  run_name_suffix: "_half"
+pretrained:
+  directory: checkpoints/pretraining_run_half

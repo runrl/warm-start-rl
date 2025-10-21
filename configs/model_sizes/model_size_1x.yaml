@@ -1,0 +1,8 @@
+description: Baseline transformer size (hidden=128, heads=4, depth=2)
+ppo:
+  model_hidden_dim: 128
+  model_heads: 4
+  model_depth: 2
+wandb:
+  tags:
+    - size=1x

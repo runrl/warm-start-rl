@@ -1,0 +1,8 @@
+description: Double-size transformer (hidden=192, heads=6, depth=2)
+ppo:
+  model_hidden_dim: 192
+  model_heads: 6
+  model_depth: 2
+wandb:
+  tags:
+    - size=2x

@@ -1,0 +1,19 @@
+{
+  "run_name": "pretrain_20_1x-seed1",
+  "pretrain_steps": 20,
+  "seed": 1,
+  "model_hidden_dim": 128,
+  "model_heads": 4,
+  "model_depth": 2,
+  "threshold_hits": {
+    "0.8": 500,
+    "0.9": 800,
+    "0.97": 1400,
+    "0.99": 1600
+  },
+  "pretrain_policy_loss": 0.4587138730867648,
+  "pretrain_value_loss": 0.17817149776704505,
+  "pretrain_accuracy": 0.827060611478634,
+  "run_id": "run_20251018-010750-120492",
+  "metrics_root": "/home/shadeform/c4-scaling/reports/local_metrics/1x/run_20251018-010750-120492"
+}

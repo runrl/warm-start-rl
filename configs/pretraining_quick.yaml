@@ -1,0 +1,50 @@
+wandb:
+  mode: online
+
+dataset:
+  path: data/minimax_dataset.pt
+
+experiments:
+  seeds: [1]
+  runs:
+    - name: pretrain_0
+      pretrain_steps: 0
+    - name: pretrain_30
+      pretrain_steps: 30
+    - name: pretrain_60
+      pretrain_steps: 60
+    - name: pretrain_90
+      pretrain_steps: 90
+
+ppo:
+  episodes: 4000
+  batch_size: 100
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coef: 0.2
+  entropy_coef: 0.01
+  value_coef: 0.5
+  learning_rate: 0.0001
+  update_epochs: 1
+  minibatch_size: 64
+  eval_interval: 100
+  eval_episodes: 200
+  eval_minimax_episodes: 200
+  reward_ma_window: 50
+  opponent: minimax
+  log_every_episode: false
+  stochastic_eval: true
+  use_cuda: true
+  use_mps: false
+
+output_root: outputs/pretraining_quick
+
+target_metrics:
+  thresholds: [0.80, 0.90, 0.97, 0.99]
+  consecutive: 2
+
+ppo_tuning: {}
+
+pretrained:
+  directory: checkpoints/pretraining_run
+  file_pattern: checkpoint_step_{step:04d}.pt
